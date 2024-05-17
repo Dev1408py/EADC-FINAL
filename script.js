@@ -1,8 +1,8 @@
-document.getElementById('showDateTimeBtn').addEventListener('click', () => {
-    const dateTimeDisplay = document.getElementById('dateTimeDisplay');
-    const currentDateTime = getCurrentDateTime();
-    dateTimeDisplay.textContent = `Current Date and Time: ${currentDateTime}`;
-  });
+// document.getElementById('showDateTimeBtn').addEventListener('click', () => {
+//     const dateTimeDisplay = document.getElementById('dateTimeDisplay');
+//     const currentDateTime = getCurrentDateTime();
+//     dateTimeDisplay.textContent = `Current Date and Time: ${currentDateTime}`;
+//   });
   
   function getCurrentDateTime() {
     const options = {
@@ -19,3 +19,5 @@ document.getElementById('showDateTimeBtn').addEventListener('click', () => {
     return currentDateTime;
   }
   
+// const getCurrentDateTime = getCurrentDateTime;
+exports.getCurrentDateTime = getCurrentDateTime;
